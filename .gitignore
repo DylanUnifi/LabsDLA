@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environments
+venv/
+env/
+.env
+.env.local
+LabDLA/
+
+# IDEs
+.vscode/
+.idea/
+
+# Deep Learning / Data
+data/
+_data/
+Models/
+*.pth
+*.pt
+wandb/
+
+# Datasets & Model outputs
+results_distilbert_ft/
+results_peft/
+grpo_qwen_reasoning/
+grpo_qwen_final/
+*.zip
+
+# Gradio
+.gradio/
+flickr8k_faiss.index
+
+# Scratch / non-project files
+scratch/
+scratch_colleagues/
+colleague_repo/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+* - Copia.*
+* - Copia*
+
+# Videos
+*.mp4

@@ -1,0 +1,33 @@
+# Core ML
+torch
+torchvision
+
+# NLP / Transformers
+transformers
+datasets
+accelerate>=1.1.0
+peft
+evaluate
+
+# Reinforcement Learning
+trl
+reasoning_gym
+
+# Computer Vision
+opencv-python
+scikit-learn
+
+# Visualization & Logging
+matplotlib
+seaborn
+tqdm
+wandb
+tensorboard
+
+# Web App (Lab2)
+gradio
+faiss-cpu
+
+# Notebook & Environment
+jupyter
+python-dotenv

@@ -1,0 +1,27 @@
+services:
+  pytorch-workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dla-pytorch
+    
+    # Crucial fix to avoid PyTorch DataLoader "Bus error"
+    shm_size: '16gb'
+    
+    # Synchronize the root project folder to the container
+    volumes:
+      - .:/workspace
+      
+    ports:
+      - "8888:8888"
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    tty: true
+    stdin_open: true
